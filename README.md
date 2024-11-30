@@ -28,3 +28,16 @@ A bash script to automate the installation, build, and configuration of the XMRi
    ```bash
    git clone https://github.com/Parthpatil7/automated-xmrig-installer.git
    cd automated-xmrig-installer
+
+2. **Make the script executable**
+   ```bash
+   chmod +x setup_xmr.sh
+
+3. **Execute the script**
+   ```bash
+   ./script.sh
+
+4. **Verify startup configuration**
+   ```bash
+   sudo systemctl status xmrig.service
+
