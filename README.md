@@ -41,3 +41,12 @@ A bash script to automate the installation, build, and configuration of the XMRi
    ```bash
    sudo systemctl status xmrig.service
 
+
+## Script Overview
+The script automates the following steps:
+
+- Install Dependencies: Installs essential tools like cmake, build-essential, and libraries required to build XMRig.
+- Clone the XMRig Repository: Downloads the official XMRig source code from GitHub.
+- Build and Compile: Compiles the source code using cmake and make.
+- Run XMRig: Starts XMRig in the background with the provided wallet address and pool configuration.
+- Startup Configuration: Sets up a systemd service to run XMRig automatically on system startup.
