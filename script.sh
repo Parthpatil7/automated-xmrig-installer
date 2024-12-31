@@ -41,4 +41,4 @@ sudo systemctl daemon-reload
 sudo systemctl enable xmrig.service
 sudo systemctl start xmrig.service
 
-echo "XMRig setup and startup configuration complete."
+echo "XMRig setup startup configuration complete."
