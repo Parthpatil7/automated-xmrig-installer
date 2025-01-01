@@ -3,16 +3,14 @@
 
 # Update and install required packages
 sudo apt-get update
-sudo apt-get install -y git build-essential cmake automake libtool autoconf
+sudo apt install -y git build-essential cmake automake libtool autoconf
 
 # Clone XMRig repository
-sudo git clone https://github.com/xmrig/xmrig.git/opt/xmrig
+sudo git clone https://github.com/xmrig/xmrig.git
 
 # Build XMRig
-cd /opt/xmrig
-sudo mkdir build && cd scripts
-sudo ./build_deps.sh
-cd ../build
+sudo mkdir xmrig/build && cd xmrig/scripts
+sudo ./build_deps.sh && cd ../build
 sudo cmake .. -DXMRIG_DEPS=scripts/deps
 sudo make -j$(nproc)
 
